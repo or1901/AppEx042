@@ -2,6 +2,7 @@ package com.example.appex042;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         imageBtn = findViewById(R.id.imageBtn);
         iv = findViewById(R.id.iv);
+
+        imageBtn.setBackgroundColor(Color.WHITE);
     }
 
     public void randomImage(View view) {
@@ -29,12 +32,15 @@ public class MainActivity extends AppCompatActivity {
         switch(num)
         {
             case 1:
+                imageBtn.setImageResource(R.drawable.one);
                 iv.setImageResource(R.drawable.electrobunny);
                 break;
             case 2:
+                imageBtn.setImageResource(R.drawable.two);
                 iv.setImageResource(R.drawable.orbit);
                 break;
             case 3:
+                imageBtn.setImageResource(R.drawable.three);
                 iv.setImageResource(R.drawable.roboactive);
                 break;
         }
